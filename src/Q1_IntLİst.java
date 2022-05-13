@@ -31,6 +31,7 @@ public class Q1_IntLİst {
         System.out.println("\n***");
         System.out.println("bestenBykSayiVarMi(list) = " + bestenBykSayiVarMi(list));
         System.out.println("\n***");
+        System.out.println("son5ElemanSirala(list) = " + son5ElemanSirala(list));
 
     }
     // S1:listi aralarinda bosluk birakarak yazdiriniz //
@@ -127,6 +128,10 @@ public class Q1_IntLİst {
 
 
     //S17: listenin son bes elemaninin  listele
+    public static List<Integer> son5ElemanSirala(List<Integer> l){
+
+     return    l.stream().skip(l.size()-5).collect(Collectors.toList());
+    }
 
 
 
